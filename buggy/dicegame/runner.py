@@ -58,11 +58,12 @@ class GameRunner:
                 break
 
 
-            prompt = input("Would you like to play again?[Y/n]: ")
+            prompt = input("Would you like to play again?[Y/N]: ")
 
-            if prompt.lower() == 'y' or prompt == '': ## fix no.5
+            if prompt.upper() == 'Y' or prompt == ' ': ## fix no.5
                 continue
-            elif prompt.lower() == 'n':
+            elif prompt.upper() == 'N':
                 break
             else:
-                i_just_throw_an_exception()
+                print('======> Please use Numbers only <======') ## Nice way to exit
+                exit()
