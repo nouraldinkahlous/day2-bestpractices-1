@@ -49,18 +49,17 @@ class GameRunner:
             runner.round += 1
 
             if runner.wins == 6: ## fix no.4
-                print("You won... Congrats...")
-                print("The fact it took you so long is pretty sad")
+                print("YOU WON... Hurray !!!")
                 break
 
             if runner.loses == 6:
-                print("You lost... Shame...")
+                print("YOU LOST...  Please try again....")
                 break
 
 
-            prompt = input("Would you like to play again?[Y/N]: ")
+            prompt = input("Would you like to play again?[Y/N]:")
 
-            if prompt.upper() == 'Y' or prompt == ' ': ## fix no.5
+            if prompt.upper() == 'Y' : ## fix no.5
                 continue
             elif prompt.upper() == 'N':
                 break
