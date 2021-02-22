@@ -1,5 +1,4 @@
 from .die import Die
-from .utils import i_just_throw_an_exception
 
 class GameRunner:
 
